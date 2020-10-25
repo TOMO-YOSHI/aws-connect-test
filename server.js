@@ -2,7 +2,7 @@ let express = require('express');
 let app = express();
 let path = require('path');
 const connectionPool = require('./connection.js');
-const mysql = require('mysql');
+// const mysql = require('mysql');
 const cors = require("cors");
 
 app.use(cors());
