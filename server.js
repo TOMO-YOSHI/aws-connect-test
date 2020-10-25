@@ -7,13 +7,13 @@ const cors = require("cors");
 
 app.use(cors());
 
-// app.use(express.static('public'));
+app.use(express.static('react-project/build'));
 
 app.use(express.urlencoded({ extended: true }));
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'public/pages', 'index.html'));
-// })
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/pages', 'index.html'));
+})
 
 app.set('port', process.env.PORT || 8080);
 
