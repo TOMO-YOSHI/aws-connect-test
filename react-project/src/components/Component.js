@@ -4,8 +4,8 @@ const Component = () => {
     const [data, setData] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:8080/api/pets", { mode: "cors" })
-        // fetch("http://34.219.17.114/api/pets", { mode: "cors" })
+        // fetch("http://localhost:8080/api/pets", { mode: "cors" })
+        fetch("http://34.219.17.114/api/pets", { mode: "cors" })
           .then((result) => {
             // console.log(result.json());
             // setData(result);
@@ -21,6 +21,7 @@ const Component = () => {
 
     return (
         <div>
+          <p>This is a test app.</p>
             {data.map((el, i) => {
                 return <p key={i}>{el.pet_name}</p>
             })}
