@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const Component = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
 
     useEffect(()=>{
         // fetch("http://localhost:8080/api/pets", { mode: "cors" })
@@ -9,6 +9,7 @@ const Component = () => {
           .then((result) => {
             // console.log(result.json());
             // setData(result);
+            // console.log(result);
             return result.json();
           })
           .then((result) => {
