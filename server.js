@@ -17,10 +17,9 @@ app.get('/', (req, res) => {
 
 app.set('port', process.env.PORT || 8080);
 
-app.listen(8080, "10.0.10.10");
-// let server = app.listen(app.settings.port, () => {
-//     console.log('Server ready on', app.settings.port);
-// });
+let server = app.listen(app.settings.port, () => {
+    console.log('Server ready on', app.settings.port);
+});
 
 
 // GET LIST API ************************************************
