@@ -5,7 +5,8 @@ const Component = () => {
 
     useEffect(()=>{
         // fetch("http://localhost:8080/api/pets", { mode: "cors" })
-        fetch("http://34.219.17.114:8080/api/pets", { mode: "cors" })
+        // fetch("http://34.219.17.114:8080/api/pets", { mode: "cors" })
+        fetch("http://34.219.17.114/api/pets", { mode: "cors" })
           .then((result) => {
             // console.log(result.json());
             // setData(result);
