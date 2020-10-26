@@ -27,6 +27,7 @@ const Component = () => {
         })
         .then((result) => {
           console.log(result);
+          console.log("Switch to localhost!!");
           setData(result);
         })
         .catch((error) => console.log(error));
@@ -39,6 +40,7 @@ const Component = () => {
         })
         .then((result) => {
           console.log(result);
+          console.log("Switch to IP!!");
           setData(result);
         })
         .catch((error) => console.log(error));
